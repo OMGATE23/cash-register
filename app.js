@@ -11,7 +11,7 @@ availableNotes = [2000,500,100,20,10,5,1]
 
 function checkFunction() {
     message.style.display = "none"
-    if(givenAmount.value > 0) {
+    if(givenAmount.value > 0 && billAmount.value > 0) {
         generateChange()
     }
 
@@ -29,15 +29,20 @@ function showMessage(msg){
 function generateChange(){
     let changeAmount = givenAmount.value - billAmount.value
     
-    console.log(changeAmount)
-    for (let  i =0; i <availableNotes.length; i++){
+
+    if (changeAmount>0){
+        console.log(changeAmount)
+        for (let  i =0; i <availableNotes.length; i++){
         let noOfNotes = Math.trunc(changeAmount/availableNotes[i])
-        console.log(noOfNotes)
         changeAmount = changeAmount % availableNotes[i]
         notesData[i].innerText = noOfNotes
-
-
+        }
     }
+
+    else {
+        showMessage("Ask for more money")
+    }
+    
     
 }
 
