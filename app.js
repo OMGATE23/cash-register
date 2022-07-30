@@ -37,9 +37,9 @@ function generateChange(){
         changeAmount = changeAmount % availableNotes[i]
         notesData[i].innerText = noOfNotes
         }
-    }
-
-    else {
+    } else if(changeAmount==0){
+        showMessage("No change required to be given")
+    }else {
         showMessage("Ask for more money")
     }
     
