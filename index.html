@@ -4,20 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+
+    <header>
         <h1 class="heading">Cash Register Manager</h1>
+    </header>
+
+    <div class="container">    
         <p class="description">
             Enter the bill amount and cash given by the customer and know minimum number of notes to return
         </p>
-        <label for="bill-amount">Bill Amount:</label>
-        <input type="text" id="bill-amount">
-        <label for="cash-given">Cash Given</label>
-        <input type="text" id="cash-given">
-        <button class="check-button">Generate change</button>
-        <p class="error-message" style="outline: 2px solid black;"></p>
+
+        <div class="input-div">
+            <label for="bill-amount">Bill Amount:</label>
+            <input type="text" id="bill-amount">
+            <label for="cash-given">Cash Given</label>
+            <input type="text" id="cash-given">
+            <button class="check-button">Generate change</button>
+        </div>
+        <p class="error-message"></p>
 
         <table class="change-table">
             <caption>
