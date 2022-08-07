@@ -47,6 +47,8 @@ header {
     font-size: 1.125rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 .input-div {
@@ -56,6 +58,7 @@ header {
     box-shadow: 10px 10px 20px 10px lightgrey;
     margin-bottom: 2rem;
     border-radius: 1.5rem;
+    
 }
 
 #bill-amount,
@@ -112,4 +115,34 @@ tr {
     margin-top: 0;
     border-top: 0;
     /* outline: 2px solid black; */
+}
+
+@media(max-width:650px){
+    .description {
+        margin: 0.5rem 1rem;
+    }
+
+    .input-div {
+        margin: 0.5rem 1rem;
+    }
+
+    table {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    tbody {
+          display: flex;
+          flex-direction: row;
+      }
+    tr {
+          display: flex;
+          flex-direction: column;
+          align-items: stretch;
+      }
+
+    th, td {
+        min-height: 1.5rem;
+    }
 }
