@@ -119,6 +119,9 @@ tr {
 
 @media(max-width:650px){
 
+    header {
+        padding: 0 1rem;
+    }
     h1 {
         font-size: 1.75rem;
      }
