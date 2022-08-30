@@ -31,7 +31,6 @@ function generateChange(){
     
 
     if (changeAmount>0){
-        console.log(changeAmount)
         for (let  i =0; i <availableNotes.length; i++){
         let noOfNotes = Math.trunc(changeAmount/availableNotes[i])
         changeAmount = changeAmount % availableNotes[i]
