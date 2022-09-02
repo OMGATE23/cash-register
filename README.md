@@ -7,4 +7,4 @@ The available notes are worth 2000, 500, 100, 20, 10, 5, 1
 
 The App is going to give the number of each note required
 
-![alt text](https://omgate.netlify.app/images/mark-7-screenshot.png)
+![alt text](https://omgate.netlify.app/images/mark-10-screenshot.png)
