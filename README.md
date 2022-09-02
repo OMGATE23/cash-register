@@ -7,8 +7,12 @@ The available notes are worth 2000, 500, 100, 20, 10, 5, 1
 
 The App is going to give the number of each note required
 
+<<<<<<< HEAD
 ## Project Image
-![alt text](https://omgate.netlify.app/images/mark-7-screenshot.png)
+![alt text](https://omgate.netlify.app/images/mark-10-screenshot.png)
 
 ## Project Demo
 https://change-calculator-om.netlify.app/
+=======
+
+>>>>>>> a1d4a7ff17488be15917fae0e2a16c0f9d14dd19
